@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Staatliches', sans-serif; */
+
+
+/* CONFIGURAÇÕES GERAIS */
+
+:root{
+    --escuro: #535971;
+    --vermelho: #FF5374;
+    --claro: #EFEFEF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: var(--claro);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+body::before{
+    content: '';
+
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    height: 436px;
+    background: var(--escuro);
+}
+
+/* ************************************************ */
+
+/* HEADER */
+
+#header-background{
+    width: 750px;
+    margin: 140px auto 58px;
+}
+
+header{
+    width: 417px;
+}
+
+header h1{
+    color: #FFF;
+    font-size: 48px;
+    font-family: 'Staatliches', sans-serif;
+    font-weight: 400;
+
+    margin-bottom: 18px;
+}
+
+header p{
+    color: #FFF;
+    font-size: 20px;
+}
+
+/* ************************************************ */
+
+/* FORM */
+
+form{
+    width: 750px;
+    margin: 0 auto;
+    padding: 64px;
+    border-radius: 20px 20px 0px 0px;
+    
+    background: #FFF;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+ 
+form input{
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    margin-bottom: 16px;
+    padding-left: 20px;
+
+    background-color: #FAFAFC;
+    color: var(--escuro);
+    font-size: 16px;
+}
+
+.col-names{
+    display: flex;
+    gap: 22px;
+}
+
+.col-names input{
+    width: 300px;
+}
+
+label{
+    margin-bottom: 8px;
+}
+
+
+fieldset{
+    border: none;
+    margin-bottom: 30px;
+}
+
+fieldset legend{
+    color: #535971;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+
+    border-bottom: 1px solid #E6E6F0;
+    width: 100%;
+    padding-bottom: 16px;
+    margin-bottom: 36px;
+}
+
+.sublegend{
+    font-size: 20px;
+}
+
+form span{
+    color: #757378;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.col-date{
+    display: flex;
+}
+
+.col-date div:nth-child(1){
+    width: 300px;
+    margin-right: 32px;
+}
+
+.col-date div:nth-child(2), .col-date div:nth-child(3){
+    width: 140px;
+    margin-right: 10px;
+}
+
+/* ************************************************ */
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    height: 160px;
+    margin: 0 auto 150px;
+
+    background: var(--escuro);
+    border-radius: 0px 0px 20px 20px;
+}
+
+footer button{
+    width: 608px;
+    height: 55px;
+
+    border-radius: 20px;
+    border: none;
+    background: var(--vermelho);
+    padding: 15px 40px;
+
+    color: #FFF;
+    font: 20px 'Staatliches';
+    line-height: 26px;
+}
